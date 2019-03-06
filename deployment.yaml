@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
@@ -7,12 +7,12 @@ metadata:
 spec:
   replicas: 3
   template: 
-    metadeta:
+    metadata:
       labels:
         name: kubertest-node
     spec: 
       containers:
-      - image: asia.gcr.io/heroic-throne-207504/kubertest/2ad8158f0521:0.1
+      - image: asia.gcr.io/heroic-throne-207504/kubertest/:0.1
         name: kubertest-node
         ports: 
         - containerPort: 8080
