@@ -2,11 +2,11 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    name: kubertest-node
-  name: kubertest-node
+    name: kubertest-service
+  name: kubertest-service
 spec:
   ports:
   - port: 8080
   selector: 
-    name: kubertest-node
+    name: kubertest-service
   type: LoadBalancer
