@@ -12,7 +12,7 @@ spec:
         name: kubertest-node
     spec: 
       containers:
-      - image: asia.gcr.io/heroic-throne-207504/kubertest/:0.1
+      - image: asia.gcr.io/heroic-throne-207504/kubertest:0.1
         name: kubertest-node
         ports: 
         - containerPort: 8080
